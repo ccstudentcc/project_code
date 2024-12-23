@@ -32,14 +32,14 @@ int main() {
         {
             std::vector<double> knots = {0, 1, 2, 3, 4, 5, 6};
             std::vector<double> coefficients = {0, 1, 0, -1, 0, 1, 0, -1, 0};
-            generateAndSaveBSpline<3>(knots, coefficients, "..\\..\\output\\requirement5\\cubic_bspline.csv");
+            generateAndSaveBSpline<3>(knots, coefficients, "../../output/requirement5/cubic_bspline.csv");
         }
 
         // Example 2: Quintic B-spline (degree 5)
         {
             std::vector<double> knots = {0, 1, 2, 3, 4};
             std::vector<double> coefficients = {0, 2, 3, 2, 0, -1, 2, 3, 2};
-            generateAndSaveBSpline<5>(knots, coefficients, "..\\..\\output\\requirement5\\quintic_bspline.csv");
+            generateAndSaveBSpline<5>(knots, coefficients, "../../output/requirement5/quintic_bspline.csv");
         }
     } catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;
@@ -48,3 +48,4 @@ int main() {
 
     return EXIT_SUCCESS;
 }
+

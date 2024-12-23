@@ -1,7 +1,5 @@
 // CurveFitting.hpp
-#ifndef CURVEFITTING_HPP
-#define CURVEFITTING_HPP
-
+#pragma once
 #include <vector>
 #include <Eigen/Dense>
 #include <stdexcept>
@@ -441,4 +439,3 @@ Eigen::Vector3d CurveFitting::inverseStereographicProjection(const Eigen::Vector
     return original_point;
 }
 
-#endif // CURVEFITTING_HPP

@@ -1,6 +1,5 @@
 // SplineType.h
-#ifndef SPLINE_TYPE_H
-#define SPLINE_TYPE_H
+#pragma once
 
 /**
  * @enum SplineType
@@ -11,4 +10,3 @@ enum class SplineType {
     BSpline            /**< B-spline */
 };
 
-#endif // SPLINE_TYPE_H

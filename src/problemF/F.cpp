@@ -111,17 +111,29 @@ void saveDivideTruncate(std::vector<double> t, int degree, std::string filename,
 int main() {
     saveTruncate(0, 1, "../../output/problemF/trunc_1.csv");
     std::string command = "python plotF_trunc.py ../../output/problemF/trunc_1.csv";
-    system(command.c_str());
+    int result = system(command.c_str());
+	if (result != 0) {
+    	std::cerr << "Command failed with exit code: " << result << std::endl;
+	}
 
     saveTruncate(0, 2, "../../output/problemF/trunc_2.csv");
     command = "python plotF_trunc.py ../../output/problemF/trunc_2.csv";
-    system(command.c_str());
+    result = system(command.c_str());
+	if (result != 0) {
+    	std::cerr << "Command failed with exit code: " << result << std::endl;
+	}
 
     saveDivideTruncate({0, 1, 2}, 1, "../../output/problemF/divided_1.csv");
     command = "python plotF_divide.py ../../output/problemF/divided_1.csv";
-    system(command.c_str());
+    result = system(command.c_str());
+    if (result != 0) {
+    	std::cerr << "Command failed with exit code: " << result << std::endl;
+	}
 
     saveDivideTruncate({0, 1, 2, 3}, 2, "../../output/problemF/divided_2.csv");
     command = "python plotF_divide.py ../../output/problemF/divided_2.csv";
-    system(command.c_str());
+    result = system(command.c_str());
+    if (result != 0) {
+    	std::cerr << "Command failed with exit code: " << result << std::endl;
+	}
 }

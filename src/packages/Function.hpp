@@ -1,6 +1,4 @@
-#ifndef FUNCTION
-#define FUNCTION
-
+#pragma once
 #include <vector>
 #include <cstddef>
 #include <stdexcept>
@@ -423,4 +421,3 @@ public:
     }
 };
 
-#endif // FUNCTION

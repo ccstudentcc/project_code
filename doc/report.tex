@@ -19,7 +19,6 @@
 \usepackage{listings}
 \lstset{
 basicstyle=\small\ttfamily,
-columns=flexible,
 breaklines=true
 }
 % \usepackage{matlab-prettifier} % MATLAB 美化包
@@ -45,11 +44,10 @@ breaklines=true
 \setlength{\paperheight}{29.7cm}
 \setlength{\textheight}{25.3cm}
 
-
 \begin{document}
 \begin{sloppypar}
 % =================================================
-\title{NA Project Homework}
+\title{NA Project Report}
 
 \author{陈澎 Chen Peng 3220103443
   \thanks{Email: \texttt{cpzju@zju.edu.cn}}}
@@ -60,7 +58,7 @@ breaklines=true
 \maketitle
 
 % ============================================
-\section*{Problem A}
+\section{Problem A}
 Compile and run the program \verb|A.cpp|. Its output includes max errors and convergence rates of different situations and the values of the interpolation curves for plotting.
 
 Compile and run the program \verb|plotA.py| to plot the interpolation curves
@@ -216,7 +214,7 @@ or equivalently in exponential form:
 \]
 This confirms that the error decreases approximately as \(O(N^{-3.77})\).
 
-\section*{Problem C}
+\section{Problem C}
 Compile and run the program \verb|C.cpp|. Its output includes the values of the interpolation curves for plotting. The data stores in the directory \verb|output\problemC|.
 
 Compile and run the program \verb|plotC.py| to plot the interpolation curves
@@ -227,20 +225,20 @@ Fig.\ref{fig:BSpline_interpolation_C}.
   \centering
   \begin{tabular}{c}
     \includegraphics[width=0.6\textwidth]{../figure/problemC/Cubic_BSpline_interpolation.png} \\
-    \includegraphics[width=0.6\textwidth]{../figure/problemC/Quatratic_BSpline_interpolation.png}
+    \includegraphics[width=0.6\textwidth]{../figure/problemC/Quadratic_BSpline_interpolation.png}
   \end{tabular}
   \renewcommand{\figurename}{Fig.}
-  \caption{Quatratic and cubic BSpline interpolation for Problem C}
+  \caption{Quadratic and cubic BSpline interpolation for Problem C}
   \label{fig:BSpline_interpolation_C}
 \end{figure}
 
-The program tests quatratic B-spline curve fitting for the target function and
+The program tests quadratic B-spline curve fitting for the target function and
 cubic B-spline curve fitting under various boundary conditions and linear
 B-spline curve fitting.
 
-The implementation of the quatratic B-spline curve follows the relevant
+The implementation of the quadratic B-spline curve follows the relevant
 theorems in the textbook. In the actual implementation, it is ensured that the
-quatratic spline passes through all control points and that the first
+quadratic spline passes through all control points and that the first
 derivative is continuous at the internal nodes, except for the first two and
 the last two nodes.
 
@@ -257,14 +255,14 @@ Fig.\ref{fig:Linear_BSpline_interpolation_C}.
   \label{fig:Linear_BSpline_interpolation_C}
 \end{figure}
 
-As can be seen from the figure, the fitting effect of the quatratic B-spline
+As can be seen from the figure, the fitting effect of the quadratic B-spline
 curve is worse than that of the cubic B-spline curve. This is because the
-locality of the quatratic spline is stronger than that of the cubic spline,
+locality of the quadratic spline is stronger than that of the cubic spline,
 which weakens the fitting effect. The linear B-spline curve fitting effect is
 also worse than the cubic B-spline curve, which is consistent with the
 theoretical analysis.
 
-\section*{Problem D}
+\section{Problem D}
 Compile and run the program \verb|D.cpp|. Its output includes the error data of specific points and max errors data for different B-spline methods and the values of the interpolation curves for plotting. The data stores in the directory \verb|output\problemD|.
 
 In the bspline package, the relevant functions for the 2nd-order cardinal
@@ -391,7 +389,7 @@ fitting effect.
   ]{../output/problemD/maxerror.csv}
 \end{table}
 
-\section*{Problem E}
+\section{Problem E}
 Compile and run the program \verb|E.cpp|. Its output includes max errors data for B-spline in \verb|maxerror.csv| and PPForm methods of different boundary conditions and the values of the fitted and actual curves for plotting. It also outputs a file \verb|compare.csv| that compares whether the curves obtained with the same interpolation points and boundary conditions under equidistant node conditions are consistent between PPForm and B-spline methods. The data is stored in the directory \verb|output\problemE|.
 
 Compile and run the program \verb|plotE.py| to plot the interpolation curves
@@ -636,7 +634,7 @@ drawn:
         \end{itemize}
 \end{itemize}
 
-\section*{Problem F}
+\section{Problem F}
 Compile and run the program \verb|F.cpp|. Its output includes the values of the interpolation curves for plotting. The data stores in the directory \verb|output\problemF|.
 It will also run the program \verb|plotF_trunc.py| and \verb|plotF_divide.py| to plot the truncated power function and divided truncated power function. The figures are stored in the directory \verb|figure\problemF|.
 
@@ -681,7 +679,7 @@ power function were tested, as shown in Fig.\ref{fig:divided_trunc_power_2}.
   \label{fig:divided_trunc_power_2}
 \end{figure}
 
-\section*{Requirement 5}
+\section{Requirement 5}
 Compile and run the program \verb|require5.cpp|. Its output includes the coordinate data of the fitted curves to be plotted. The data is stored in the directory \verb|output\requirement5|.
 
 Compile and run the program \verb|plotRequire5.py| to plot the interpolation
@@ -714,7 +712,7 @@ Therefore, given the dimension and coefficients and knot sequences,
 \verb|Bspline.hpp| can implement the plotting of splines of any order and any
 nodes.
 
-\section*{Test}
+\section{Test}
 Compile and run the program \verb|test.cpp|. Its output includes the max errors and convergence rate of different situations and the values of the interpolation curves for plotting. The data stores in the directory \verb|output\test|.
 Run the program \verb|plotTest.py| to plot the interpolation curves and the original function. The figures are stored in the directory \verb|figure/test|.
 
@@ -793,7 +791,7 @@ It can be seen that under non-uniform node conditions, the fitting effect remain
   ]{../output/test/A_maxerror_convergence.csv}
 \end{table}
 
-\section*{Intersection}
+\section{Intersection}
 Compile and run the program \verb|intersect_test.cpp|. Its output includes the intersection information. The data stores in the directory \verb|output\intersect\intersect_curve.csv|.
 Run the program \verb|plotIntersect.py| to plot the intersection curve $r_4$ with its self-intersection points calculated by python. The figures are stored in the directory \verb|figure/intersect|.
 

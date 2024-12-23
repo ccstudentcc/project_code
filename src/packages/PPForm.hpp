@@ -1,6 +1,5 @@
 // PPForm.hpp
-#ifndef PPFORM_HPP
-#define PPFORM_HPP
+#pragma once
 
 #include <vector>
 #include <array>
@@ -679,4 +678,3 @@ Eigen::VectorXd PPForm<3>::buildBVector(BoundaryCondition condition)
     return b;
 }
 
-#endif // PPFORM_HPP

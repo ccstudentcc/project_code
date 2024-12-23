@@ -1,7 +1,5 @@
 // BSpline.hpp
-#ifndef BSPLINE_HPP
-#define BSPLINE_HPP
-
+#pragma once
 #include <vector>
 #include <Eigen/Dense>
 #include <stdexcept>
@@ -882,4 +880,3 @@ void BSpline<3>::computeCoefficients()
     }
 }
 
-#endif // BSPLINE_HPP

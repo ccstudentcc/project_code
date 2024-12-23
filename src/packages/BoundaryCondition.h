@@ -1,6 +1,5 @@
 // BoundaryCondition.h
-#ifndef BOUNDARYCONDITION_HPP
-#define BOUNDARYCONDITION_HPP
+#pragma once
 
 /**
  * @enum BoundaryCondition
@@ -14,4 +13,3 @@ enum class BoundaryCondition {
     SECOND    /**< Specified second derivatives boundary conditions */
 };
 
-#endif // BOUNDARYCONDITION_HPP

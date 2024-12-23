@@ -79,6 +79,9 @@ project_code
 |- Makefile
 \end{lstlisting}
 
+The \verb|Makefile| is used to compile and run the source codes and generate the documents. 
+Use \verb|c++11 -O3 -march=native| to speed up. Since Eigen3 compilation is relatively slow, please be patient and wait for 2-3 minutes.
+
 The directory structure of doc is as follows:
 \begin{lstlisting}
 doc
@@ -157,8 +160,6 @@ output
 
 Apart from the packages folder, each subdirectory contains source codes for a
 specific problem or requirement.
-
-The \verb|Makefile|
 
 \subsection{Explanation of Relationships Between Classes}
 The packages consists of the following files:

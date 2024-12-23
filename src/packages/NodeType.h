@@ -1,6 +1,5 @@
 // NodeType.h
-#ifndef NODE_TYPE_H
-#define NODE_TYPE_H
+#pragma once
 
 /**
  * @enum NodeType
@@ -11,4 +10,3 @@ enum class NodeType {
     ChordalLength      /**< Cumulative chordal length node preprocessing */
 };
 
-#endif // NODE_TYPE_H
