@@ -1,0 +1,48 @@
+Curve r1:
+---- Self-Intersection Summary ----
+Curve is closed.
+The curve is closed and does not self-intersect.
+-----------------------------------
+Curve r2:
+---- Self-Intersection Summary ----
+Curve is open.
+The curve does not self-intersect.
+-----------------------------------
+Curve r3:
+---- Self-Intersection Summary ----
+Curve is closed.
+The curve has self-intersections.
+Number of Intersection Points: 1
+Details of Intersections:
+  Intersection 1:
+    Segment A: (0.000430257 0.000670086           1) --> (-0.00497295 -0.00774419    0.999958)
+    Segment B: (-0.00129077  0.00201025    0.999997) --> ( 0.00411236 -0.00640421    0.999971)
+    Intersection Point: (-1.15087e-009  5.52261e-008      0.999996)
+-----------------------------------
+Curve r4:
+---- Self-Intersection Summary ----
+Curve is closed.
+The curve has self-intersections.
+Number of Intersection Points: 5
+Details of Intersections:
+  Intersection 1:
+    Segment A: (0.702739 0.980356) --> ( 0.72358 0.979079)
+    Segment B: (0.707697 0.990374) --> (0.715351 0.970945)
+    Intersection Point: (0.711864 0.979797)
+  Intersection 2:
+    Segment A: (  1.16613 -0.362438) --> (  1.15005 -0.375713)
+    Segment B: (  1.14963 -0.365758) --> (  1.15485 -0.385972)
+    Intersection Point: (  1.15182 -0.374253)
+  Intersection 3:
+    Segment A: (0.0134886  -1.20249) --> (-0.00414068    -1.21374)
+    Segment B: (0.0153422  -1.22086) --> (-0.00225124    -1.20967)
+    Intersection Point: (-1.53292e-006       -1.2111)
+  Intersection 4:
+    Segment A: ( -1.15296 -0.378645) --> ( -1.14771 -0.358402)
+    Segment B: ( -1.13976 -0.384182) --> (  -1.1559 -0.370892)
+    Intersection Point: ( -1.15182 -0.374249)
+  Intersection 5:
+    Segment A: (-0.712574  0.978009) --> (-0.704917  0.997398)
+    Segment B: (-0.716028  0.979547) --> (-0.695151  0.980808)
+    Intersection Point: (-0.711868  0.979799)
+-----------------------------------
